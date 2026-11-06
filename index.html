@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulário</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 100vh;
+      }
+      #formulario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        background-color: #f5ffbe;
+        border: 3px groove #a8ffa0;
+        border-radius: 10px;
+      }
+      label {
+        margin: 3px;
+        padding: 3px;
+        border: 2px groove #a0eeff;
+        border-radius: 4px;
+      }
+      input[type="text"],
+      select,
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      textarea,
+      input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px groove #a0eeff;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="file"]:hover {
+        background-color: #83c0f5;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a07d;
+      }
+      h1,h4 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <h1>Formulário de Cadastro</h1>
+        <div id="formulario">
+        
+        <form class="formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required />
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input
+            type="date"
+            id="data-nascimento"
+            name="data-nascimento"
+            required
+          />
+          <select id="curso" name="curso" required>
+            <option value="selecione-o-curso">Selecione o curso</option>
+            <option value="Engenharia-de-Software">
+              Engenharia de Software
+            </option>
+            <option value="Engenharia-de-Computacao">
+              Engenharia de Computacao
+            </option>
+            <option value="ciencia-da-computacao">Ciência da Computação</option>
+          </select>
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select>
+          <label for="interesses">Interesses:</label>
+          <input type="text" id="interesses" name="interesses" />
+          <label for="comentarios">Comentarios:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <label for="upload-documento-identificacao"
+            >Faça o download do documento de identidade:</label
+          >
+          <input
+            type="file"
+            id="upload-documento-identificacao"
+            name="upload-documento-identificacao"
+            accept=".pdf,.doc,.docx"
+            required
+          />
+          <input type="submit" value="Enviar" />
+        </form>
+        <div>
+      </section>
+      <section></section>
+    </main>
+    <footer>
+      <h4>© Desenvolvido por Lucas Bueno - 2026</h4>
+    </footer>
+  </body>
+</html>

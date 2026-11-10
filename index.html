@@ -23,15 +23,15 @@
     }
 
     .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 340px;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f5ffbe;
-    border: 3px groove #a8ffa0;
-    border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 340px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f5ffbe;
+      border: 3px groove #a8ffa0;
+      border-radius: 10px;
     }
 
     label {
@@ -146,9 +146,8 @@
           <input type="text" id="interesses" name="interesses" />
           <label for="comentarios">Comentarios:</label>
           <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
-          <label for="upload-documento-identificacao">Faça o download do documento de identidade:</label>
-          <input type="file" id="upload-documento-identificacao" name="upload-documento-identificacao"
-            accept="image/*" required />  
+          <label for="upload-documento-identificacao">Faça o upload de uma foto:</label>
+          <input type="file" id="foto" name="foto" accept="image/*" required />
           <input type="submit" value="Enviar" />
         </form>
       </div>
